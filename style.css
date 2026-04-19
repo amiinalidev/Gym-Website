@@ -1,0 +1,277 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+        font-family: "Noto Sans", sans-serif;
+    }
+    .video-background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        
+      }
+
+      .video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+       .video-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 30, 48, 0.75);
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: linear-gradient(
+                rgba(20, 30, 48, 0.927),
+                rgba(13, 19, 30, 0.932));
+            
+
+        }
+         .logo{
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+         }
+         .logo span{
+            color: #ff5722; ;
+         }
+         .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 45px;
+            align-items: center;
+         }
+         .nav-links a{
+            text-decoration: none;
+            color: #b0b0b0;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+         }
+    
+         .nav-links a.active{
+            color: #ff5722;
+         }
+          .nav-links a:hover{
+            color: #cb3d11;
+            transition: 0.3s ease;
+          }
+          .sign-up-btn{
+            background: #ff5722;
+            color: white !important;
+            padding: 12px 28px;
+            border-radius: 3px;
+          }
+          .sign-up-btn:hover{
+            background:#ff6a3d ;
+            color: white !important;
+          }
+          .hero{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            position: relative;
+          }
+          .hero-content{
+            max-width: 1200px ;
+          }
+          .subtitle{
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+          }
+          .hero h1{
+            color: white;
+            font-size: 70px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+          .hero h1 .highlight{
+            color: #ff5722;
+          }
+          .signup-btn{
+            background: #ff5722;
+            color: white;
+            padding: 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+          }
+          .signup-btn:hover{
+            background: #ff6a3d;
+            color: black;
+          }
+          .programs{
+            padding: 80px 20px;
+            background-color: whitesmoke;
+            text-align: center;
+          }
+          .programs h1{
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 800px;
+            margin-bottom: 2rem;
+          }
+          .programs .header-highlight{
+            color: #ED563B;
+          }
+          .programs p{
+            font-size: 16px;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+            color:#7A7A7A ;
+
+          }
+   .container {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+    
+  }
+  .item{
+    display: flex;
+    align-items: flex-start;
+  }
+  .icon-box{
+    width: 90px;
+    height: 90px;
+    background: #ED563B;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  .icon-box span{
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+
+  }
+  .content h3{
+    display: flex;
+    text-align: right;
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #222;
+  }
+  .content p{
+    text-align: justify;
+    margin: 0 0 12px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .content a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#ED563B;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+  .content a:hover{
+    color: #b23712;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+   
+
+          
+
+          
+
+@media (max-width: 1024px) {
+  nav { padding: 20px 40px; }
+  .nav-links { gap: 28px; }
+  .hero h1 { font-size: 54px; }
+}
+ 
+
+@media (max-width: 768px) {
+  nav { padding: 18px 24px; }
+ 
+  .hamburger { display: flex; }
+ 
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: rgba(20, 30, 48, 0.97);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    transition: right 0.35s ease;
+    z-index: 1050;
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a { font-size: 16px; }
+ 
+  .hero h1 { font-size: 38px; margin-bottom: 36px; }
+  .subtitle { font-size: 13px; }
+   .container {
+      grid-template-columns: 1fr;
+    }
+}
+ 
+
+@media (max-width: 480px) {
+  .logo { font-size: 20px; }
+  .hero h1 { font-size: 28px; }
+  .subtitle { font-size: 11px; }
+  .signup-btn { width: 100%; max-width: 280px; }
+}
