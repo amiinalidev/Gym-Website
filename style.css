@@ -491,7 +491,93 @@ tr:hover td{
   background:  rgba(232, 71, 42, 0.07);
   transition: backround 0.3s ease;
 }
-
+/* the team */
+.trainers-section{
+  padding: 80px 20px;
+  background: #ffffff;
+}
+.cont-trainers{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section-header{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header .expert-trainers{
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.section-header .expert-trainers span{
+  color: #e8472a;
+}
+.wave-icon{
+  color: #e8472a;
+  font-size: 1.4rem;
+  letter-spacing: 6px;
+  margin: 10px 0 18px;
+}
+.section-header p{
+  color:#888888;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.trainers-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.trainer-card{
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ffffff;
+}
+.trainer-card img{
+  width: 100%;
+  /* height: 260px; */
+  object-fit: cover;
+  display: block;
+}
+.car-body{
+  padding: 24px 24px 28px;
+}
+.role{
+  display: block;
+  color: #e8472a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.car-body h3{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 14px;
+}
+.car-body p{
+  font-size: 0.88rem;
+  color: #888888;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.socials{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.socials a{
+  font-size: 1rem;
+  color: #222222;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.socials a:hover{
+  color: #e8472a;
+}
   
     
   
@@ -529,6 +615,9 @@ tr:hover td{
     }
     .main{
       width: 100%;
+    }
+    .trainers-grid{
+      grid-template-columns: repeat(2, 1fr);
     }
     
 }
@@ -584,6 +673,9 @@ tr:hover td{
   .section-header p br {
     display: none;
   }
+  .trainers-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
     
 }
  
@@ -638,6 +730,17 @@ tr:hover td{
   .section-header h2 {
     font-size: 1.4rem;
     letter-spacing: 2px;
+    }
+    .trainers-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-header p br {
+    display: none;
+  }
+  .trainers-section {
+    padding: 50px 16px;
+  }
   
 
 }
+
