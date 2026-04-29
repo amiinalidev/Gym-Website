@@ -578,8 +578,106 @@ tr:hover td{
 .socials a:hover{
   color: #e8472a;
 }
-  
-    
+
+.contact-section{
+  display: flex;
+  height: 520px;
+}
+.map-side{
+  width: 50%;
+  height: 100%;
+}
+.map-side iframe{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.form-side{
+  width: 50%;
+  height: 100%;
+  background: #1e2430;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+}
+.form-box{
+  background: #ffffff;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 560px;
+}
+.form-row{
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.form-row input{
+  width: 50%;
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  font-size: 0.88rem;
+  outline: none;
+}
+.full-input{
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  font-size: 0.88rem;
+  color: #888888;
+  outline: none;
+  margin-bottom: 14px;
+  display: block;
+}
+.full-input:focus{
+  border-color: #e8472a;
+}
+textarea{
+  width: 100%;
+  height: 130px;
+  padding: 14px 16px;
+  border: 1px soloid #dddddd;
+  font-size: 0.88rem;
+  color: #888888;
+   outline: none;
+  resize: none; 
+  margin-bottom: 20px;
+  display: block;
+}
+textarea:focus {
+  border-color: #e8472a;
+}
+button{
+  background: #e8472a;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+footer{
+padding: 8px 20px;
+text-align: center;
+margin: 40px;
+}
+footer p{
+  font-size: 0.88rem;
+  color: #777777;
+  font-weight: 300;
+}
+footer p .active{
+  color: #e8472a;
+  font-weight: 600;
+}
+footer p .active:hover{
+  text-decoration: underline;
+  color: #b23712;
+}
+
+   
   
 
   
@@ -675,6 +773,19 @@ tr:hover td{
   }
   .trainers-grid{
     grid-template-columns: repeat(2, 1fr);
+  }
+   .form-row {
+    flex-direction: column;
+  }
+  .form-row input {
+    width: 100%;
+  }
+   .form-box {
+    padding: 24px 18px;
+  }
+ 
+  button {
+    width: 100%;
   }
     
 }
